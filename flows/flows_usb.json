@@ -1,0 +1,134 @@
+[
+    {
+        "id": "125f9a57885d8f82",
+        "type": "exec",
+        "z": "df929f54.5d2f2",
+        "command": "python3 /usbdrivers/usbdrivers.py 3",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "999999",
+        "winHide": false,
+        "name": "",
+        "x": 420,
+        "y": 40,
+        "wires": [
+            [
+                "e04cc519cc21b136"
+            ],
+            [
+                "e04cc519cc21b136"
+            ],
+            [
+                "e04cc519cc21b136"
+            ]
+        ]
+    },
+    {
+        "id": "e04cc519cc21b136",
+        "type": "debug",
+        "z": "df929f54.5d2f2",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 670,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ba4860b3b25a18f5",
+        "type": "inject",
+        "z": "df929f54.5d2f2",
+        "name": "Read driver 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "125f9a57885d8f82"
+            ]
+        ]
+    },
+    {
+        "id": "9f3f52de493f27e7",
+        "type": "exec",
+        "z": "df929f54.5d2f2",
+        "command": "python3 /usbdrivers/usbdrivers.py 4",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "999999",
+        "winHide": false,
+        "name": "",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "250baf553067c662"
+            ],
+            [
+                "250baf553067c662"
+            ],
+            [
+                "250baf553067c662"
+            ]
+        ]
+    },
+    {
+        "id": "250baf553067c662",
+        "type": "debug",
+        "z": "df929f54.5d2f2",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 670,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f8620b7bf699c8fa",
+        "type": "inject",
+        "z": "df929f54.5d2f2",
+        "name": "Read driver 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "9f3f52de493f27e7"
+            ]
+        ]
+    }
+]
